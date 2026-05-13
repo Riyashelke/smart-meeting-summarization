@@ -156,34 +156,59 @@ BERT:
 
 BERT with BIO tagging is used for entity extraction and action-item detection. It identifies tasks, deadlines, and assigned persons.
 
-11.Installation
+# Installation
 
-Clone Repository
+## Clone Repository
+
+```bash
 git clone https://github.com/Riyashelke/smart-meeting-summarization.git
+```
 
-Move into Project Directory
+## Move into Project Directory
+
+```bash
 cd smart-meeting-summarization
+```
 
-Create Virtual Environment
+## Create Virtual Environment
+
+```bash
 python -m venv venv
+```
 
-12.Activate Environment:
+# Activate Environment
 
-macOS/Linux
+## macOS/Linux
+
+```bash
 source venv/bin/activate
+```
 
-Windows
+## Windows
+
+```bash
 venv\Scripts\activate
+```
 
-Install Dependencies
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-13.Usage
-Run Main Pipeline
+# Usage
+
+## Run Main Pipeline
+
+```bash
 python pipeline_combined.py
+```
 
-Run API
+## Run API
+
+```bash
 python pipeline_api.py
+```
 
 13.Expected Output
 
