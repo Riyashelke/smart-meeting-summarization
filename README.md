@@ -1,162 +1,214 @@
-# smart-meeting-summarization
+# Smart Meeting Summarization and Action Item Detection
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![NLP](https://img.shields.io/badge/NLP-Meeting%20Summarization-green)
+![AI](https://img.shields.io/badge/AI-Deep%20Learning-orange)
+
 Smart Meeting Summarization and Action Item Detection is an AI-based system that converts meeting recordings into concise summaries and extracts tasks, deadlines, and assignees. Using Whisper, BART, PEGASUS, and BERT, it improves productivity by automating meeting analysis and prioritizing action items efficiently.
 
-Smart Meeting Summarization and Action Item Detection
+---
 
-1.Overview
+# 📖 Overview
 
 Smart Meeting Summarization and Action Item Detection is an AI-powered system designed to automate meeting analysis by generating concise summaries and extracting important action items from virtual and hybrid meetings. The system converts meeting recordings into structured textual insights using advanced Artificial Intelligence, Natural Language Processing (NLP), Speech Recognition, and Deep Learning techniques. It integrates OpenAI Whisper for speech transcription, BART and PEGASUS for abstractive summarization, and BERT for entity extraction and action-item detection.
 
 The project aims to reduce manual note-taking efforts, improve productivity, enhance collaboration, and support faster decision-making in professional, educational, and industrial environments.
 
-2.Features
+---
 
-Automatic Speech Recognition using Whisper
-Meeting transcription from audio/video recordings
-Abstractive meeting summarization
-Action item extraction
-Deadline and assignee detection
-Task prioritization system
-Multi-speaker meeting handling
-Long transcript summarization
-Interactive web interface
-AI-powered meeting analytics
+# 🚀 Features
 
-3.Problem Statement
+- Automatic Speech Recognition using Whisper
+- Meeting transcription from audio/video recordings
+- Abstractive meeting summarization
+- Action item extraction
+- Deadline and assignee detection
+- Task prioritization system
+- Multi-speaker meeting handling
+- Long transcript summarization
+- Interactive web interface
+- AI-powered meeting analytics
+
+---
+
+# ❗ Problem Statement
 
 Traditional meeting documentation methods are time-consuming and often fail to capture important discussions, decisions, and tasks accurately. Existing summarization systems struggle with multi-speaker conversations, overlapping speech, noisy audio, and long unstructured discussions. This project addresses these challenges by developing an intelligent automated system capable of generating accurate summaries and extracting actionable tasks with priorities and deadlines.
 
-4.Objectives
+---
 
-Convert meeting audio into accurate text transcripts
-Generate concise abstractive summaries
-Extract action items automatically
-Detect deadlines and assignees
-Prioritize tasks based on urgency
-Reduce manual meeting documentation effort
-Improve productivity and meeting management
+# 🎯 Objectives
 
-5.System Architecture
+- Convert meeting audio into accurate text transcripts
+- Generate concise abstractive summaries
+- Extract action items automatically
+- Detect deadlines and assignees
+- Prioritize tasks based on urgency
+- Reduce manual meeting documentation effort
+- Improve productivity and meeting management
+
+---
+
+# 🏗 System Architecture
 
 The system architecture consists of multiple processing layers:
 
-Audio/Video Input Layer
-Audio Extraction Layer
-Speech Recognition Layer
-NLP Summarization Layer
-Action Item Detection Layer
-Entity Extraction Layer
-Task Prioritization Layer
-Streamlit Web Interface
+- Audio/Video Input Layer
+- Audio Extraction Layer
+- Speech Recognition Layer
+- NLP Summarization Layer
+- Action Item Detection Layer
+- Entity Extraction Layer
+- Task Prioritization Layer
+- Streamlit Web Interface
 
 The architecture integrates Whisper ASR, BART, PEGASUS, and BERT models to generate structured meeting insights.
 
-6.Methodology
+---
+
+# ⚙️ Methodology
 
 The proposed system operates through a multi-stage AI pipeline:
 
-Input meeting audio/video recordings
-Extract audio using MoviePy
-Convert speech into text using Whisper ASR
-Generate summaries using BART and PEGASUS
-Evaluate summary quality
-Extract action items using BERT and rule-based techniques
-Detect entities such as action, assignee, and deadlines
-Prioritize tasks using scoring mechanisms
-Generate final structured output
+1. Input meeting audio/video recordings
+2. Extract audio using MoviePy
+3. Convert speech into text using Whisper ASR
+4. Generate summaries using BART and PEGASUS
+5. Evaluate summary quality
+6. Extract action items using BERT and rule-based techniques
+7. Detect entities such as action, assignee, and deadlines
+8. Prioritize tasks using scoring mechanisms
+9. Generate final structured output
 
-7.Algorithm
+---
 
-Step 1: Input Video Processing
-Load MP4 meeting recordings
-Extract audio using MoviePy
-Convert audio into MP3 format
+# 🧠 Algorithm
 
-Step 2: Speech Recognition
-Process audio using Whisper Large-v2
-Generate meeting transcripts
+## Step 1: Input Video Processing
 
-Step 3: Meeting Summarization
-Pass transcript into BART and PEGASUS
-Compare summary quality
-Select best-performing summary
+- Load MP4 meeting recordings
+- Extract audio using MoviePy
+- Convert audio into MP3 format
 
-Step 4: Action Item Detection
-Apply rule-based keyword detection
-Extract ML features
-Identify actionable tasks
+## Step 2: Speech Recognition
 
-Step 5: Entity Extraction
-Use BERT with BIO tagging
-Detect:
-Action
-Assignee
-Deadline
+- Process audio using Whisper Large-v2
+- Generate meeting transcripts
 
-Step 6: Task Prioritization
-Assign urgency scores
-Rank tasks based on contextual importance
+## Step 3: Meeting Summarization
 
-Step 7: Final Output
-Generate summaries
-Generate action-item list
-Generate priority-based tasks
+- Pass transcript into BART and PEGASUS
+- Compare summary quality
+- Select best-performing summary
 
-8.Dataset Description
+## Step 4: Action Item Detection
 
-AMI Meeting Corpus
+- Apply rule-based keyword detection
+- Extract ML features
+- Identify actionable tasks
+
+## Step 5: Entity Extraction
+
+- Use BERT with BIO tagging
+- Detect:
+  - Action
+  - Assignee
+  - Deadline
+
+## Step 6: Task Prioritization
+
+- Assign urgency scores
+- Rank tasks based on contextual importance
+
+## Step 7: Final Output
+
+- Generate summaries
+- Generate action-item list
+- Generate priority-based tasks
+
+---
+
+# 📂 Dataset Description
+
+## AMI Meeting Corpus
 
 The project uses the AMI Meeting Corpus dataset containing approximately 140 multi-speaker meetings recorded in English.
 
-Dataset Includes:
-Audio recordings
-Video recordings
-Meeting transcripts
-XML annotations
-Speaker interactions
-Supported Formats:
-MP4
-WAV
-XML
-RTF
+### Dataset Includes
+
+- Audio recordings
+- Video recordings
+- Meeting transcripts
+- XML annotations
+- Speaker interactions
+
+### Supported Formats
+
+- MP4
+- WAV
+- XML
+- RTF
 
 The dataset is suitable for meeting summarization, speech recognition, and action-item extraction research.
 
-9.Technologies Used
+---
 
-Programming Language
-Python
+# 🛠 Technologies Used
 
-Libraries & Frameworks
-Transformers
-Hugging Face
-PyTorch
-MoviePy
-NumPy
-Pandas
-NLTK
-spaCy
-Streamlit
+## Programming Language
 
-10.Models Used
+- Python
 
-Whisper:
+## Libraries & Frameworks
+
+- Transformers
+- Hugging Face
+- PyTorch
+- MoviePy
+- NumPy
+- Pandas
+- NLTK
+- spaCy
+- Streamlit
+
+---
+
+# 🤖 Models Used
+
+| Model | Purpose |
+|------|------|
+| Whisper | Speech Recognition |
+| BART | Abstractive Summarization |
+| PEGASUS | Long Text Summarization |
+| BERT | Action Item Detection |
+
+---
+
+# 🔍 Whisper
 
 OpenAI Whisper is used for Automatic Speech Recognition (ASR). It converts meeting audio into text transcripts while handling noisy environments and multi-speaker conversations.
 
-BART:
+---
+
+# 📝 BART
 
 BART is a transformer-based abstractive summarization model that generates concise summaries from long conversational transcripts.
 
-PEGASUS:
+---
+
+# 📄 PEGASUS
 
 PEGASUS is designed specifically for text summarization tasks and produces highly coherent and context-aware summaries.
 
-BERT:
+---
+
+# 🧾 BERT
 
 BERT with BIO tagging is used for entity extraction and action-item detection. It identifies tasks, deadlines, and assigned persons.
 
-# Installation
+---
+
+# 💻 Installation
 
 ## Clone Repository
 
@@ -176,7 +228,9 @@ cd smart-meeting-summarization
 python -m venv venv
 ```
 
-# Activate Environment
+---
+
+# ▶️ Activate Environment
 
 ## macOS/Linux
 
@@ -190,13 +244,17 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-## Install Dependencies
+---
+
+# 📦 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-# Usage
+---
+
+# 🚀 Usage
 
 ## Run Main Pipeline
 
@@ -210,84 +268,113 @@ python pipeline_combined.py
 python pipeline_api.py
 ```
 
-13.Expected Output
+---
+
+# 📊 Expected Output
 
 The system generates:
 
-Meeting transcript
-Abstractive summary
-Action items
-Assignee information
-Deadlines
-Priority-ranked task list
+- Meeting transcript
+- Abstractive summary
+- Action items
+- Assignee information
+- Deadlines
+- Priority-ranked task list
 
-14.Results and Analysis
+---
+
+# 📈 Results and Analysis
 
 The project compares the performance of BART and PEGASUS models based on:
 
-Processing time
-Summary quality
-Semantic coherence
-Information retention
-Context understanding
+- Processing time
+- Summary quality
+- Semantic coherence
+- Information retention
+- Context understanding
 
-Observations:
-PEGASUS achieved better summary quality (~0.84)
-BART achieved summary quality (~0.78)
-PEGASUS demonstrated more stable processing performance
-The hybrid action-item detection system achieved over 90% accuracy in tested meeting cases
+## Observations
 
-15.Applications
-Corporate meeting analysis
-Online collaboration platforms
-Educational discussions
-Industrial workflow management
-Productivity enhancement systems
-AI-powered documentation tools
+- PEGASUS achieved better summary quality (~0.84)
+- BART achieved summary quality (~0.78)
+- PEGASUS demonstrated more stable processing performance
+- The hybrid action-item detection system achieved over 90% accuracy in tested meeting cases
 
-16.Advantages
-Reduces manual note-taking
-Saves time
-Improves productivity
-Generates structured insights
-Supports long meeting analysis
-Handles multi-speaker conversations
-Automates task extraction
+---
 
-17.Future Enhancements
-Real-time meeting summarization
-Multilingual support
-Cloud deployment
-Advanced speaker diarization
-Live meeting assistant integration
-Sentiment analysis dashboard
-Mobile application support
+# 🌍 Applications
 
-18.Conclusion
+- Corporate meeting analysis
+- Online collaboration platforms
+- Educational discussions
+- Industrial workflow management
+- Productivity enhancement systems
+- AI-powered documentation tools
+
+---
+
+# ✅ Advantages
+
+- Reduces manual note-taking
+- Saves time
+- Improves productivity
+- Generates structured insights
+- Supports long meeting analysis
+- Handles multi-speaker conversations
+- Automates task extraction
+
+---
+
+# 🔮 Future Enhancements
+
+- Real-time meeting summarization
+- Multilingual support
+- Cloud deployment
+- Advanced speaker diarization
+- Live meeting assistant integration
+- Sentiment analysis dashboard
+- Mobile application support
+
+---
+
+# 📌 Conclusion
 
 The Smart Meeting Summarization and Action Item Detection system successfully automates the process of meeting transcription, summarization, and task extraction using AI and NLP technologies. By integrating Whisper, BART, PEGASUS, and BERT models, the system generates accurate summaries, extracts actionable insights, and prioritizes tasks effectively. The project improves productivity, reduces manual effort, and provides a scalable solution for modern meeting management.
 
-19.Authors
-Riya Shelke
-Vaishnavi Ranaware
-Namoha Goyal
-Dr. Pranali Kosamkar (Guide)
+---
+
+# 👨‍💻 Authors
+
+- Riya Shelke
+- Vaishnavi Ranaware
+- Namoha Goyal
+- Dr. Pranali Kosamkar (Guide)
 
 MIT World Peace University
 
-20.References
-AMI Meeting Corpus
-OpenAI Whisper
-Hugging Face Transformers
-BART Research Paper
-PEGASUS Research Paper
-BERT Research Paper
-QMSum Dataset
-SAMSum Dataset
+---
 
-License
+# 📚 References
+
+- AMI Meeting Corpus
+- OpenAI Whisper
+- Hugging Face Transformers
+- BART Research Paper
+- PEGASUS Research Paper
+- BERT Research Paper
+- QMSum Dataset
+- SAMSum Dataset
+
+---
+
+# 📄 License
+
 This project is developed for academic and research purposes.
 
-GitHub Repository
+---
+
+# 🔗 GitHub Repository
+
 Repository Link:
+
 https://github.com/Riyashelke/smart-meeting-summarization
